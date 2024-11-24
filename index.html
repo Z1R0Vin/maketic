@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Услуги компании</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; 
+            display: flex; /* Используем Flexbox для центрирования */
+            flex-direction: column; /* Устанавливаем направление колонок */
+            height: 100vh; 
+        }
+        /* Стили для главного меню */
+        .menu {
+            display: flex; /* Используем flexbox для выравнивания элементов */
+            list-style-type: none; 
+            padding: 10px 0; 
+            margin: 0; 
+            justify-content: center; /* Центрируем элементы меню */
+            background-color: white; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Стили для элементов списка в меню */
+        .menu li {
+            position: relative; 
+            margin: 0 15px; 
+        }
+
+        /* Стили для ссылок в меню */
+        .menu a {
+            text-decoration: none; /* Убираем подчеркивание */
+            color: black; 
+            font-weight: bold; 
+            transition: color 0.3s; /* Плавный переход цвета при наведении */
+        }
+
+        /* Стили для ссылок при наведении */
+        .menu a:hover {
+            color: #007BFF; /* Изменяем цвет при наведении */
+        }
+
+        /* Стили для подменю */
+        .submenu {
+            display: none; /* Скрываем подменю по умолчанию */
+            position: absolute; 
+            top: 100%; /* Позиционируем подменю под родительским элементом */
+            left: 0; 
+            background-color: white; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+
+        /* Показываем подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block; 
+        }
+
+        /* Стили для элементов подменю */
+        .submenu li {
+            margin: 0; 
+        }
+
+        /* Стили для ссылок в подменю */
+        .submenu a {
+            padding: 10px 15px; 
+            display: block; 
+            color: black; 
+        }
+
+        /* Стили для ссылок в подменю при наведении */
+        .submenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .ct {
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start; 
+            flex-grow: 1; 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            background-color: #007BFF; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            font-size: 16px;
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+            margin-top: 1px; 
+            
+        }
+        .text-block {
+            margin-right: 20px;
+        }
+        /* Стили для кнопки при наведении */
+        .button:hover {
+            background-color: #0056b3; /* Темнее при наведении */
+        }
+        .photo-block {
+            margin-top: -30px; 
+            width: 300px; 
+            height: 200px; 
+            background-color: #fff; 
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+        }
+        
+    </style>
+    <!-- Главное меню навигации -->
+    <ul class="menu">
+        <li><a href="#home">Главная</a></li>
+        <li>
+            <a href="#about">О нас</a>
+            <ul class="submenu">
+                <li><a href="#team">Наша команда</a></li>
+                <li><a href="#history">История компании</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#services">Курсы</a>
+            <ul class="submenu">
+                <li><a href="#consulting">Подготовка к Олимпиадам</a></li>
+                <li><a href="#development">Подготовка к ЕГЭ 10-11</a></li>
+                <li><a href="#support">Каталог задач</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#projects">Отзывы</a>
+            <ul class="submenu">
+            </ul>
+        </li>
+        <li><a href="#contact">Контакты</a></li>
+    </ul>
+</head>
+<body>
+    <!-- Основной контент страницы -->
+<div class="ct">
+        <div class="text-block">
+        <h3>Начинай подготовку прям сейчас !</h3>
+        <button class="button">Начать</button>
+    </div>
+    <div class="photo-block">
+            <p>Здесь будет ваша фотография</p> 
+ </div>
+
+     </div>
+
+    
+   
+    
+</body>
+</html>
